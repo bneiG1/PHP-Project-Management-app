@@ -178,7 +178,6 @@ function loginUser($conn, $username, $psw){
 	
 	$psw_from_db = $uidExists["Password"];
 	
-	
 	//decryption
 	$ciphering = "AES-128-CTR";
 	$iv_length = openssl_cipher_iv_length($ciphering);
@@ -215,7 +214,7 @@ function loginUser($conn, $username, $psw){
 		// asta ii variabila pe care o tot cautai >:(		
 		$_SESSION["User_Id"]=$row["User_Id"];
 		
-		
+	
 		session_regenerate_id(true);
 		$_SESSION["Session_Id"]=session_id();
 		

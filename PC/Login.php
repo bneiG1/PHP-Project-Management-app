@@ -7,6 +7,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="img/logo_site.png" />
     <title>SM-Security Module</title>
+		<link rel="shortcut icon" type="image/x-icon" href="img/icon.png" />
+
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
@@ -43,7 +45,7 @@
 
         <!-- todo img -->
         <div class="imgcontainer">
-          <img src="" alt="Avatar" class="avatar">
+          <img src="img/icon.png" alt="Avatar" class="avatar">
         </div>
         <!--   -->
 				<h2>Login</h2>
@@ -111,7 +113,7 @@
 <form action="includes/signup.inc.php" method="post">
    <!-- todo img -->
         <div class="imgcontainer">
-          <img src="" alt="Avatar" class="avatar">
+          <img src="img/icon.png" alt="Avatar" class="avatar">
         </div>
         <!--   -->
 	<h2>Sign-up</h2>

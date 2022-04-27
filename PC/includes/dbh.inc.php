@@ -3,7 +3,7 @@
 	$servername = "localhost";
 	$dBUsername = "root";
 	$dBPassword = "";
-	$dBName = "pc-testing_dummy";
+	$dBName = "modul_de_securitate";
 
 	$conn = mysqli_connect($servername, $dBUsername, $dBPassword, $dBName);
 
