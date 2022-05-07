@@ -15,7 +15,7 @@
     <meta http-equiv="refresh" content="">
   </head>
 
-  <body>
+  <body style = " background-image: url('img/login.jpg');">
 
     <div class="modal-content animate"  id="login">
 

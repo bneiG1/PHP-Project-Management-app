@@ -15,8 +15,7 @@ function emptyInputSignup($email, $username, $psw, $psw_re){
 		
 	}
 	
-	return $result;
-	
+	return $result;	
 }
 
 function invalidUid($username){
@@ -83,7 +82,7 @@ function uidExists($conn, $username, $email){
 	
 	if(!mysqli_stmt_prepare($stmt,$sql)){
 		
-		header("location: ../Sign-up.php?error=stmtfailed");
+		header("location: ../Login.php?error=stmtfailed");
 		exit();
 		
 	}
@@ -105,8 +104,7 @@ function uidExists($conn, $username, $email){
 		
 	}
 	
-	mysqli_stmt_close($stmt);
-	
+	mysqli_stmt_close($stmt);	
 }
 
 function createUser($conn, $username, $email, $psw){
@@ -116,7 +114,7 @@ function createUser($conn, $username, $email, $psw){
 	
 	if(!mysqli_stmt_prepare($stmt,$create_user)){
 		
-		header("location: ../Sign-up.php?error=stmtfailed");
+		header("location: ../Login.php?error=stmtfailed");
 		exit();
 		
 	}
@@ -138,10 +136,7 @@ function createUser($conn, $username, $email, $psw){
 	mysqli_stmt_close($stmt);
 	
 	header("location: ../Login.php?error=sign-up_succes");
-	exit();
-	
-	
-	
+	exit();	
 }
 
 function emptyInputLogin($username, $psw){
@@ -160,9 +155,7 @@ function emptyInputLogin($username, $psw){
 		
 	}
 	
-	return $result;
-	
-	
+	return $result;		
 }
 
 function loginUser($conn, $username, $psw){
@@ -222,7 +215,7 @@ function loginUser($conn, $username, $psw){
 		$now = date("Y-m-d H:i:s");
 
 		//pentru tabela users
-		$sql_user_login="UPDATE users SET Logged_in = '".$now."', Logged_out = NULL WHERE User_Id='".$_SESSION["User_Id"]."'; ";
+		$sql_user_login="UPDATE users SET Logged_in = '".$now."', Logged_out = NULL,  Session_Id='".$_SESSION["Session_Id"]."' WHERE User_Id='".$_SESSION["User_Id"]."'; ";
 		$execute_sql_date_login = $conn->query($sql_user_login);
 		
 
@@ -242,10 +235,8 @@ function loginUser($conn, $username, $psw){
 		mysqli_stmt_execute($stmt);
 		mysqli_stmt_close($stmt);
 
-		header("location: ../Logged_in.php");
+		header("location: ../Main.php");
 		exit();
 		
-	}
-	
-	
+	}		
 }
