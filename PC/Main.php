@@ -81,8 +81,6 @@
   <a> <button class="tablinks" onclick="openTab(event, 'Test')">Test</button></a>
 
 
-<!-- tre sa fac un buton de meniu -->
-
 <div class="dropup">
 <button class="dropbtn">
 <img src="img/Profile.png" style=" width:70px; height:60px; position: relative; padding-left: 10px;">
@@ -110,15 +108,10 @@
 <div id="Home" class="tabcontent">
   <h3>Home</h3>
   <hr>
-  <p>Welcom 
-
+  <p>Welcome  
   	<?php 
-
   	echo $_SESSION["Username"]. ".";
-
-	?>
-
-
+	  ?>
   </p>
 </div>
 
@@ -169,68 +162,71 @@
   <p>90uilhgjkghjkguty7ighkn.</p>
 </div>
 
+
+<!-- IDE -->
 <div id="HTML & Javascript" class="tabcontent">
   <h3>HTML & Javascript</h3>
-  <iframe src="https://www.jdoodle.com/html-css-javascript-online-editor/" width="100%" height="850px" style="border:none;"></iframe>
+  <iframe src="https://www.jdoodle.com/html-css-javascript-online-editor/"></iframe>
 </div>
 
 <div id="NodeJS" class="tabcontent">
   <h3>NodeJS</h3>
-<iframe src="https://www.jdoodle.com/execute-nodejs-online/" width="100%" height="100%" style="border:none;"></iframe>
+  <iframe src="https://www.jdoodle.com/execute-nodejs-online/"></iframe>
 </div>
 
 <div id="PHP" class="tabcontent">
   <h3>PHP</h3>
-<iframe src="https://www.jdoodle.com/php-online-editor/" width="100%" height="100%" style="border:none;"></iframe>
+  <iframe src="https://www.jdoodle.com/php-online-editor/"></iframe>
 </div>
 
 <div id="SQL" class="tabcontent">
   <h3>SQL</h3>
-<iframe src="https://www.jdoodle.com/execute-sql-online/" width="100%" height="100%" style="border:none;"></iframe>
+  <iframe src="https://www.jdoodle.com/execute-sql-online/"></iframe>
 </div>
 
 <div id="C" class="tabcontent">
   <h3>C</h3>
-<iframe src="https://www.jdoodle.com/c-online-compiler/" width="100%" height="100%" style="border:none;"></iframe>
+  <iframe src="https://www.jdoodle.com/c-online-compiler/"></iframe>
 </div>
 
 <div id="C++" class="tabcontent">
   <h3>C++</h3>
-<iframe src="https://www.jdoodle.com/online-compiler-c++/" width="100%" height="100%" style="border:none;"></iframe>
+  <iframe src="https://www.jdoodle.com/online-compiler-c++/"></iframe>
 </div>
 
 <div id="C#" class="tabcontent">
   <h3>C#</h3>
-<iframe src="https://www.jdoodle.com/compile-c-sharp-online/" width="100%" height="100%" style="border:none;"></iframe>
+  <iframe src="https://www.jdoodle.com/compile-c-sharp-online/"></iframe>
 </div>
 
 <div id="Java" class="tabcontent">
   <h3>Java</h3>
-<iframe src="https://www.jdoodle.com/online-java-compiler/" width="100%" height="100%" style="border:none;"></iframe>
+  <iframe src="https://www.jdoodle.com/online-java-compiler/"></iframe>
 </div>
 
 <div id="Python" class="tabcontent">
   <h3>Python</h3>
-<iframe src="https://www.jdoodle.com/python3-programming-online/" width="100%" height="100%" style="border:none;"></iframe>
+  <iframe src="https://www.jdoodle.com/python3-programming-online/"></iframe>
 </div>
 
 <div id="CLISP" class="tabcontent">
   <h3>CLISP</h3>
-<iframe src="https://www.jdoodle.com/execute-clisp-online/" width="100%" height="100%" style="border:none;"></iframe>
+  <iframe src="https://www.jdoodle.com/execute-clisp-online/"></iframe>
 </div>
 
 <div id="Prolog" class="tabcontent">
-<iframe src="https://www.jdoodle.com/execute-prolog-online/" width="100%" height="100%" style="border:none;"></iframe>
+<h3>Prolog</h3>
+  <iframe src="https://www.jdoodle.com/execute-prolog-online/" ></iframe>
 </div>
 
 <div id="Bash" class="tabcontent">
   <h3>Bash</h3>
-<iframe src="https://www.jdoodle.com/test-bash-shell-script-online/" width="100%" height="100%" style="border:none;"></iframe>
+  <iframe src="https://www.jdoodle.com/test-bash-shell-script-online/" ></iframe>
 </div>
 
 <div id="Matlab" class="tabcontent">
   <h3>Matlab</h3>
-<iframe src="https://www.jdoodle.com/execute-octave-matlab-online/" width="100%" height="100%" style="border:none;"></iframe>
+  <iframe src="https://www.jdoodle.com/execute-octave-matlab-online/" ></iframe>
 </div>
 
 <div id="Test" class="tabcontent">
@@ -316,6 +312,9 @@
 </div>
 
 
+
+<!-- Scripts -->
+
 <script>
 var dropdown = document.getElementsByClassName("dropdown-btn");
 var i;
@@ -332,9 +331,6 @@ for (i = 0; i < dropdown.length; i++) {
   });
 }
 </script>
-
-
-
 
 <script>
 function openTab(evt, Tab_name) {
@@ -353,16 +349,7 @@ function openTab(evt, Tab_name) {
 document.getElementById("defaultOpen").click();
 </script>
 
-
-    <script src=
-"https://www.jdoodle.com/assets/jdoodle-pym.min.js"
-        type="text/javascript">
-    </script>
-
- 
 <script>
-
-
 var global_friend = ""; 
 var global_response = "";
 
@@ -391,7 +378,6 @@ function select_user(Username){
 	});
 
 }
-
 </script>
 
 </body>

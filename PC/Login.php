@@ -39,33 +39,31 @@
 					echo "<p style='color:red; text-align: center'>Database error!</p>";
 				}
 			}
-?>
+		?>
 
       <form action="includes/login.inc.php" method="post">
 
-        <!-- todo img -->
         <div class="imgcontainer">
           <img src="img/icon.png" alt="Avatar" class="avatar">
         </div>
-        <!--   -->
-				<h2>Login</h2>
+			<h2>Login</h2>
         <div class="container">
 
           <label for="uname">
             <b>Username</b>
           </label>
 
-          <input type="text" placeholder="Enter Username" name="uname" required>
+          <input type="text" placeholder="Enter Username" name="uname" required style="border:none;">
 
           <label for="psw">
             <b>Password</b>
           </label>
 
           <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
-
+		  <input type="checkbox" onclick="seePsw()"><label> Show Password </label>
           <button type="submit" name="submit">Login</button>
 
-          <h3 style="text-align: center">OR</h3>
+          <label> <h3 style="text-align: center">OR</h3></label>
 
       </form>
 
@@ -111,37 +109,32 @@
 		?>
 
 <form action="includes/signup.inc.php" method="post">
-   <!-- todo img -->
+
         <div class="imgcontainer">
           <img src="img/icon.png" alt="Avatar" class="avatar">
         </div>
-        <!--   -->
+
 	<h2>Sign-up</h2>
-	
 	<div class="container">
     <label for="uname"><b>Username</b></label><br><br>
     <input type="text" placeholder="Enter your username" name="uname" required>
 	</div>
-	<br>
 	
 <div class="container">
     <label for="uname"><b>Email</b></label><br><br>
     <input type="text" placeholder="Enter the email addres" name="email" required>
 	</div>
-	<br>
-
 
 	<div class="container">
     <label for="uname"><b>Password</b></label><br><br>
     <input type="password" placeholder="Enter Password" name="psw" required>
 	</div>
-	<br>
-	
+
 	<div class="container">
     <label for="psw"><b>Repeat the password</b></label><br><br>
     <input type="password" placeholder="Enter Password" name="psw-repeat" required>
 	</div>
-        <br><br>
+        <br>
 		
 	<button type="submit" name="submit">Sign-up</button>
 
@@ -164,6 +157,20 @@
       signup.style.display = "none";
 
     </script>
+
+<script>
+
+function seePsw() {
+  var x = document.getElementById("psw");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+
+</script>
+
 
   </body> 
 
