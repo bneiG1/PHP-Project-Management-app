@@ -17,12 +17,8 @@
 <link href="css/Sidenav.css" rel="stylesheet">
 <link href="css/Calendar.css" rel="stylesheet">
 
-
-
 <script src="js/Sidenav.js"></script>
 <script src="js/Dropdown.js"></script>
-<script src="js/Calendar.js"></script>
-
 
 </head>
 
@@ -75,11 +71,6 @@
   <a> <button class="tablinks" onclick="openTab(event, 'Bash')">Bash</button></a>
   <a> <button class="tablinks" onclick="openTab(event, 'Matlab')">Matlab</button></a>
   </div>
-
-
-
-  <a> <button class="tablinks" onclick="openTab(event, 'Test')">Test</button></a>
-
 
 <div class="dropup">
 <button class="dropbtn">
@@ -229,13 +220,6 @@
   <iframe src="https://www.jdoodle.com/execute-octave-matlab-online/" ></iframe>
 </div>
 
-<div id="Test" class="tabcontent">
-  <h3>Test123</h3>
-  <p>    <div data-pym-src=
-"https://www.jdoodle.com/embed/v0/2IhG?stdin=1&arg=0">
-    </div></p>
-</div>
-
 <div id="admin" class="tabcontent">
 	<h3>Dashboard</h3>
   	<hr><br>
@@ -261,50 +245,6 @@
   	?>
   	</button>
 
-  	<!-- <?php
-
-  // echo "<form action='index.php' method=post>
-  // <table>
-  // <tr>
-  // <th>User</th>
-  // <th>Group</th>
-  // <th>HTML & Javascript</th>
-  // <th>NodeJS</th>
-  // <th>PHP</th>
-  // <th>SQL</th>
-  // <th>C</th>
-  // <th>C++</th>
-  // <th>C#</th>
-  // <th>Java</th>
-  // <th>Python</th>
-  // <th>CLISP</th>
-  // <th>Prolog</th>
-  // <th>Bash</th>
-  // <th>Matlab</th>
-  // </tr>";
-
-    // echo "<tr>
-    // <th>" . $Username_of_users . "</th>
-    // <th>NUME GRUP</th>
-    // <th><input type='checkbox' name='HTML & Javascript' value='HTML & Javascript'></th>
-    // <th><input type='checkbox' name='NodeJS' value='NodeJS'></th>
-    // <th><input type='checkbox' name='PHP' value='PHP'></th>
-    // <th><input type='checkbox' name='SQL' value='SQL'></th>
-    // <th><input type='checkbox' name='C' value='C'></th>
-    // <th><input type='checkbox' name='C++' value='C++'></th>
-    // <th><input type='checkbox' name='C#' value='C#'></th>
-    // <th><input type='checkbox' name='Java' value='Java'></th>
-    // <th><input type='checkbox' name='Python' value='Python'></th>
-    // <th><input type='checkbox' name='CLISP' value='CLISP'></th>
-    // <th><input type='checkbox' name='Prolog' value='Prolog'></th>
-    // <th><input type='checkbox' name='Bash' value='Bash'></th>
-    // <th><input type='checkbox' name='Matlab' value='Matlab'></th>
-
-
-    // </tr>";
-
-    // echo "</table><div class='give_permissions_button'><button type='submit' name='give_permisions'>Execute actions</button></div></form>";
- ?> -->
 </h3>
 </div>
 
